@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #af0;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #f0f;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-indent: 100px; 
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 100px;
+}
+
+.bg {
+    height: 500px;
+    width: 100%;
+    background-color:darkslategray;
+    background-image: url('https://images.unsplash.com/photo-1711352759621-120905957245?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
