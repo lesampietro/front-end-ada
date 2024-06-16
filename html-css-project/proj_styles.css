@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.4rem;
+}
+
+/* Este cálculo de porcentagem facilita a padronização das mendidas em rem uma vez que o tamanho da fonte padrão nos navegadores é 16px, e 16 * 62,5% é 10px; */
+:root {
+    font-size: 62,5%;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . . ."
+        ". hero form ."
+        ". hero form ."
+        ". . . ."
+        ". . . ."
+    ;
+    gap: 8.5rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+aside h1 {
+    font-family: 'Roboto', 'sans serif';
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside h1 span, main h2 span {
+    color: #FF4F4F;
+}
+
+main {
+    width: 600px;
+    height: 560px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+    padding: 3.8rem 5.7rem;
+}
+
+main h2 {
+    max-width: 50rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+main .button{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .button a{
+    height: 80px;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.2rem;
+    font-size: 2rem;
+    background-color:darkturquoise;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+main .button a + a{
+    background-color: #FF4F4F;
+    margin-top: 1.5rem;
+}
+
+main footer p{
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+main footer a{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    display: block;
+}
